@@ -1,34 +1,39 @@
+/* Alapértelmezett stílusok a body elemhez */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e5f7f3d5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    height: 100vh; /* Magasság beállítása a nézetablak teljes magasságára */
+    display: flex;
+    justify-content: center; /* Középre igazítás vízszintesen */
+    align-items: center; /* Középre igazítás függőlegesen */
+    background: url('/assets/catUser.png') no-repeat center center fixed; /* Háttérkép beállítása */
+    background-size: cover; /* Háttérkép kitöltése */
 }
 
+/* Stílusok a form tartalom számára */
 .catUser {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Félátlátszó háttér */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Form szélesség */
+    box-sizing: border-box; /* Padding és border beletartozik a szélességbe */
+    text-align: center; /* Cím középre igazítása */
+    margin-left: calc(50% - 150px);
+   
 }
 
 .catUser img {
-    width: 300px;
+    width: 100px;
     height: auto;
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto 20px; /* Kép középre igazítása */
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: 10px 0;
+    width: 100%;
+    
 }
 
 form h1 {
@@ -42,6 +47,8 @@ input {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%; /* Input mezők szélessége */
+    box-sizing: border-box; /* Padding és border beletartozik a szélességbe */
 }
 
 input::placeholder {
@@ -58,6 +65,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%; /* Gomb szélessége */
 }
 
 button:hover {
