@@ -59,15 +59,22 @@ input::placeholder {
 button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #39968b;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     width: 100%; /* Gomb szélessége */
+    box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease; 
+    cursor: pointer; /* mutatóujj kurzor */
 }
 
 button:hover {
     background-color: #45a049;
 }
+button:active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* kisebb árnyék */
+    transform: translateY(2px); /* eltolás lefelé */
+  }
