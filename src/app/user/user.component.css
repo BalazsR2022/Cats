@@ -19,6 +19,7 @@ body {
     box-sizing: border-box; /* Padding és border beletartozik a szélességbe */
     text-align: center; /* Cím középre igazítása */
     margin-left: calc(50% - 150px);
+    box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.5);
    
 }
 
@@ -33,6 +34,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
+   
     
 }
 
