@@ -8,14 +8,21 @@ import { ContactComponent } from './contact/contact.component';
 import { UserComponent } from './user/user.component';
 import { AboutComponent } from './about/about.component';
 import { PlayComponent } from './play/play.component';
+import { StoreComponent } from './store/store.component';
+import { PayComponent } from './pay/pay.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'user', component: UserComponent },
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'about', component: ContactComponent },
-  { path: 'play', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'play', component: PlayComponent },
+  { path: 'store', component: StoreComponent },
+  { path: 'pay', component: PayComponent },
+  { path: 'navbar', component: NavbarComponent },
+
 ];
 
 @NgModule({
@@ -25,7 +32,10 @@ const appRoutes: Routes = [
     ContactComponent,
     UserComponent,
     AboutComponent,
-    PlayComponent
+    PlayComponent,
+    StoreComponent,
+    PayComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

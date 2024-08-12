@@ -1,46 +1,27 @@
 /* Alapértelmezett stílusok a body elemhez */
-
-
 body {
     margin: 0;
-    padding-top: 60px; /* Állítsd be ezt az értéket a navbar magasságához képest */
     height: 100vh; /* Magasság beállítása a nézetablak teljes magasságára */
     display: flex;
-    flex-direction: column; /* A tartalom függőleges elrendezése */
-    justify-content: flex-start; /* Felső igazítás */
-    align-items: center; /* Középre igazítás vízszintesen */
+    justify-content: center; /* Középre igazítás vízszintesen */
+    align-items: center; /* Középre igazítás függőlegesen */
     background: url('/assets/catUser.png') no-repeat center center fixed; /* Háttérkép beállítása */
-    background-size: contain; /* Háttérkép kitöltése */
-}
-
-
-
-
-/* Navbar stílusok */
-app-navbar {
-    width: 100%; /* A navbar teljes szélessége */
-    position: fixed; /* Fix pozíció a tetején */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Magasabb rétegsorrend */
+    background-size: cover; /* Háttérkép kitöltése */
 }
 
 /* Stílusok a form tartalom számára */
-
-  
 .catUser {
-    background-color: rgba(27, 31, 32, 0.9); /* Félátlátszó háttér */
+    background-color: rgba(255, 255, 255, 0.9); /* Félátlátszó háttér */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 200px; /* Form szélesség */
+    width: 300px; /* Form szélesség */
     box-sizing: border-box; /* Padding és border beletartozik a szélességbe */
     text-align: center; /* Cím középre igazítása */
-    margin-top: 10%; /* Előzőleg megadott margin eltávolítása */
-    margin-left: 50%;
+    margin-left: calc(50% - 150px);
+    box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.5);
+   
 }
-
-
 
 .catUser img {
     width: 100px;
@@ -53,6 +34,13 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
+   
+    
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 input {
@@ -80,15 +68,15 @@ button {
     cursor: pointer;
     font-size: 16px;
     width: 100%; /* Gomb szélessége */
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease;
+    box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease; 
+    cursor: pointer; /* mutatóujj kurzor */
 }
 
 button:hover {
     background-color: #45a049;
 }
-
 button:active {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* kisebb árnyék */
     transform: translateY(2px); /* eltolás lefelé */
-}
+  }

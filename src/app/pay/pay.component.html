@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catUser</title>
+    <link rel="stylesheet" href="pay.component.css">
+</head>
+<body>
+    <div class="catUser">
+        
+        <form class="sign-in-form">
+            
+            <input type="text" placeholder="Name" id="signInUserName">
+            <input type="password" placeholder="Password" id="signInUserPassword">
+            <input type="email" placeholder="Email" id="signInUserEmail">
+            <button type="submit">Sign In</button>
+        </form>
+
+        <form class="log-in-form">
+            
+            <input type="text" placeholder="Name" id="logInUserName">
+            <input type="password" placeholder="Password" id="logInUserPassword">
+            <button type="submit">Log In</button>
+            <button type="button" routerLink="/home">Home</button>
+        </form>
+    </div>
+    <router-outlet></router-outlet>
+</body>
+</html>
