@@ -4,48 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="store.component.css">
-    <title>Document</title>
+    <title>Store</title>
 </head>
 <body>
     <app-navbar></app-navbar>
     <div class="storeCards">
+      <table>
+      <td>
         <div class="card" style="width: 18rem; padding: 2rem; margin: 2rem">
-            <img src="/assets/jatszoter.png" class="card-img-top" alt="...">
+            <img src="/assets/playground.png" class="card-img-top" alt="playground" style="border-radius: 10px;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Playground</h5>
+              <p class="card-text">Your cat's new playground. </p>
+              <p class="card-price">Price: $1.00</p> <!-- Ár hozzáadása -->
+              <p class="card-stock">In Stock</p> <!-- Raktáron -->
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="selectedQuantity">
+              <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
+             
             </div>
           </div>
+        </td>
+
+      <td>
+        <div class="card" style="width: 18rem; padding: 2rem; margin: 2rem">
+          <img src="/assets/toy.png" class="card-img-top" alt="toy" style="border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Toy</h5>
+            <p class="card-text">Surprize for your cat.</p>
+            <p class="card-price">Price: $1.00</p> <!-- Ár hozzáadása -->
+            <p class="card-stock">In Stock</p> <!-- Raktáron -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="selectedQuantity">
+            <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+      </td>
+
+      <td>
         <div class="card" style="width: 18rem;padding: 2rem; margin: 2rem">
-            <img src="/assets/jatek.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+          <img src="/assets/feedingDish.png" class="card-img-top" alt="feeding dish" style="border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Feeding dish</h5>
+            <p class="card-text">Your cat likes eating</p>
+            <p class="card-price">Price: $1.00</p> <!-- Ár hozzáadása -->
+            <p class="card-stock">In Stock</p> <!-- Raktáron -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="selectedQuantity">
+            <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
           </div>
+        </div>
+      </td>
+
+      <td>
         <div class="card" style="width: 18rem;padding: 2rem; margin: 2rem">
-            <img src="/assets/etetotal.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+          <img src="/assets/hammock.png" class="card-img-top" alt="hammock" style="border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Hammock</h5>
+            <p class="card-text">Your cat likes resting.</p>
+            <p class="card-price">Price: $1.00</p> <!-- Ár hozzáadása -->
+            <p class="card-stock">In Stock</p> <!-- Raktáron -->
+            <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="selectedQuantity">
+            <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
           </div>
-        <div class="card" style="width: 18rem;padding: 2rem; margin: 2rem">
-            <img src="/assets/fuggoagy.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+        </div>
+      </td>
+       
+    </table>
+    
     </div>
     <router-outlet></router-outlet>
 </body>
 </html>
 
 
-<p>store works!</p>
+
 <router-outlet></router-outlet>

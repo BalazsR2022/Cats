@@ -11,6 +11,7 @@ body {
     align-items: center; /* Középre igazítás vízszintesen */
     background: url('/assets/catUser.png') no-repeat center center fixed; /* Háttérkép beállítása */
     background-size: contain; /* Háttérkép kitöltése */
+    background-color: #39968b;
 }
 
 

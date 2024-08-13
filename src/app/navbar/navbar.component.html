@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navbar</title>
 </head>
 <body>
     <nav class="navbar navbar-light" style="background-color: #e3f2fd;position: static;">
@@ -12,6 +12,14 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
+            <button type="button" class="btn btn-primary position-relative">
+              <i class="bi bi-cart"></i>
+              <span id="cart-count"  class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                0
+              </span>
+            </button>
+          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -61,15 +69,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-              <li>
-                <button type="button" class="btn btn-primary position-relative">
-                  <i class="bi bi-cart"></i>
-
-                  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                    <span class="visually-hidden">New alerts</span>
-                  </span>
-                </button>
               </li>
             </ul>
             <form class="d-flex">

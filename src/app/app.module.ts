@@ -11,6 +11,7 @@ import { PlayComponent } from './play/play.component';
 import { StoreComponent } from './store/store.component';
 import { PayComponent } from './pay/pay.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)  // RouterModule hozzáadása
+    RouterModule.forRoot(appRoutes) ,
+    FormsModule // RouterModule hozzáadása
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,20 @@
 .storeCards{
 
-    margin:50px;
+    margin: 5px;
     padding: 5px;
     content: icon;
+}
+body {
+    margin: 0;
+    padding-top: 60px; /* Állítsd be ezt az értéket a navbar magasságához képest */
+    height: 100vh; /* Magasság beállítása a nézetablak teljes magasságára */
+    display: flex;
+    flex-direction: column; /* A tartalom függőleges elrendezése */
+    justify-content: flex-start; /* Felső igazítás */
+    align-items: center; /* Középre igazítás vízszintesen */
+    background-size: contain; /* Háttérkép kitöltése */
+    background-color: #39968b;
+}
+button{
+    margin-top: 15px;
 }
