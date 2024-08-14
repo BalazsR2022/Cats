@@ -11,7 +11,7 @@ body {
 
 /* Stílusok a form tartalom számára */
 .catUser {
-    background-color: rgba(255, 255, 255, 0.9); /* Félátlátszó háttér */
+    background-image: linear-gradient(90deg, #deffaf 0, #ccffb0 12.5%, #b5ffae 25%, #98ffa9 37.5%, #73f2a2 50%, #42e59d 62.5%, #00db9c 75%, #00d3a0 87.5%, #00cfa7 100%);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

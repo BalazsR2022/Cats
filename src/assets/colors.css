@@ -1,0 +1,229 @@
+.one{
+    background-color: rgb(105,113,114);
+}
+.two{
+    background-color: rgb(131,108,99);
+}
+.three{
+    background-color: rgb(236,230,211);
+}
+.four{
+    background-color: rgb(227,198,148);
+}
+.five{
+    background-color: rgb(193,214,214);
+}
+
+
+.six{
+    background-color: rgb(230,230,206);
+}
+.seven{
+    background-color: rgb(187,223,24);
+}
+.eight{
+    background-color: rgb(112,157,11);
+}
+.nine{
+    background-color: rgb(54,96,5);
+}
+.ten{
+    background-color: rgb(11,35,1);
+    color:rgb(112,157,11)
+}
+
+
+.eleven{
+    background-color: rgb(238,21,123);
+}
+.twelve{
+    background-color: rgb(239,21,164);
+}
+.thirteen{
+    background-color: rgb(239,68,180);
+}
+.fourteen{
+    background-color: rgb(239,120,190);
+}
+.fifteen{
+    background-color: rgb(239,150,202);
+}
+
+
+.sixteen{
+    background-color: rgb(5,166,234);
+}
+.seventeen{
+    background-color: rgb(4,101,171);
+}
+.eighteen{
+    background-color: rgb(15,53,145);
+}
+.nineteen{
+    background-color: rgb(8,26,94);
+    color: rgb(4,101,171)
+}
+.twenty{
+    background-color: rgb(3,7,56);
+    color:rgb(4,101,171)
+}
+
+
+
+
+.twenty-one{
+    background-color: rgb(245,182,148);
+}
+.twenty-two{
+    background-color: rgb(66,11,6);
+    color:rgb(219,145,195)
+}
+.twenty-three{
+    background-color: rgb(161,6,81);
+}
+.twenty-four{
+    background-color: rgb(219,145,195);
+}
+.twenty-five{
+    background-color: rgb(200,198,253);
+}
+
+
+.twenty-six{
+    background-color: rgb(21,35,62);
+    color: rgb(116,141,181);
+}
+.twenty-seven{
+    background-color: rgb(28,44,70);
+    color: rgb(116,141,181);
+}
+.twenty-eight{
+    background-color: rgb(51,70,102);
+}
+.twenty-nine{
+    background-color: rgb(116,141,181);
+}
+.thirty{
+    background-color: rgb(132,155,187);
+}
+
+
+.thirty-one{
+    background-color: rgb(0,5,21);
+    color:rgb(4,137,108)
+}
+.thirty-two{
+    background-color: rgb(21,71,78);
+}
+.thirty-three{
+    background-color: rgb(4,137,108);
+}
+.thirty-four{
+    background-color: rgb(49,159,134);
+}
+.thirty-five{
+    background-color: rgb(215,250,186);
+}
+
+
+.thirty-six{
+    background-color: rgb(52,53,49);
+}
+.thirty-seven{
+    background-color: rgb(83,84,79);
+}
+.thirty-eight{
+    background-color: rgb(141,142,135);
+}
+.thirty-nine{
+    background-color: rgb(191,192,187);
+}
+.fourty{
+    background-color: rgb(236,236,236);
+}
+
+
+.fourty-one{
+    background-color: rgb(253,146,92);
+}
+.fourty-two{
+    background-color: rgb(249,70,65);
+}
+.fourty-three{
+    background-color: rgb(233,36,66);
+}
+.fourty-four{
+    background-color: rgb(214,13,32);
+}
+.fourty-five{
+    background-color: rgb(150,11,18);
+}
+
+
+.fourty-six{
+    background-color: rgb(227,185,140);
+}
+.fourty-seven{
+    background-color: rgb(186,150,141);
+}
+.fourty-eight{
+    background-color: rgb(141,107,132);
+}
+.fourty-nine{
+    background-color: rgb(70,48,88);
+}
+.fifty{
+    background-color: rgb(36,5,7);
+}
+
+
+.fifty-one{
+    background-color: rgb(241,166,255);
+}
+.fifty-two{
+    background-color: rgb(139,126,240);
+}
+.fifty-three{
+    background-color: rgb(30,77,243);
+}
+.fifty-four{
+    background-color: rgb(0,181,228);
+}
+.fifty-five{
+    background-color: rgb(3,236,251);
+}
+
+
+.fifty-six{
+    background-color: rgb(252,240,166);
+}
+.fifty-seven{
+    background-color: rgb(206,247,207);
+}
+.fifty-eight{
+    background-color: rgb(254,0,172);
+}
+.fifty-nine{
+    background-color: rgb(251,2,0);
+}
+.sixty{
+    background-color: rgb(244,4,13);
+}
+h1{
+    background-image: radial-gradient(circle at -18.3% 31.7%, #abe4ff 0, #6c90d8 50%, #344463 100%);
+}
+h2{
+    background-image: linear-gradient(90deg, #ffa4c0 0, #ff9bc6 10%, #ff91c9 20%, #ff88c9 30%, #ff7ec5 40%, #f273bd 50%, #d369b3 60%, #b760aa 70%, #9e5aa1 80%, #885499 90%, #755092 100%);}
+h3{
+        background-image: linear-gradient(90deg, #deffaf 0, #ccffb0 12.5%, #b5ffae 25%, #98ffa9 37.5%, #73f2a2 50%, #42e59d 62.5%, #00db9c 75%, #00d3a0 87.5%, #00cfa7 100%);
+    }
+
+h4{background-image: linear-gradient(305deg, #d1cdd6 0, #d1ccd3 10%, #ccc7cd 20%, #c3bfc2 30%, #b5b5b5 40%, #a3a8a5 50%, #909b96 60%, #81928c 70%, #768b85 80%, #6f8782 90%, #6c8683 100%);
+
+    }
+h5{
+    background-image: linear-gradient(170deg, #da90fc 0, #ab79d6 16.67%, #7c5eab 33.33%, #50427c 50%, #2a274f 66.67%, #0d0d28 83.33%, #000000 100%);
+    }
+h6{
+    background-image: linear-gradient(120deg, #f47222 0, #f2642f 8.33%, #eb5538 16.67%, #df443e 25%, #ce3342 33.33%, #b81f42 41.67%, #9e073f 50%, #83003a 58.33%, #6c0035 66.67%, #580031 75%, #46002e 83.33%, #38002b 91.67%, #2c002a 100%);
+    }

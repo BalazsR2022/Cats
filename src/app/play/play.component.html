@@ -1,2 +1,35 @@
-<p>play works!</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play</title>
+</head>
+<body>
+  <app-navbar></app-navbar>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-3" *ngFor="let card of cards; let i = index">
+      <div class="card-container" [ngClass]="{'flipped': card.flipped}" (click)="flipCard(i)">
+        <div class="card-content">
+          <!-- Kártya eleje (kép) -->
+          <div class="card-front">
+            <img [src]="card.image" class="card-img-top" alt="card image" style="border-radius: 10px;">
+            <div class="card-label">{{ card.label }}</div>
+          </div>
+          <!-- Kártya hátoldala (szöveg) -->
+          <div class="card-back">
+            <p *ngIf="!card.winner">Now you didn't win</p>
+            <p *ngIf="card.winner">Congratulations, you won!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <router-outlet></router-outlet>
+</body>
+</html>
