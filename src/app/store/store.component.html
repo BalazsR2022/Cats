@@ -9,75 +9,19 @@
 <body>
     <app-navbar></app-navbar>
     <div class="storeCards">
-      <table>
-      <td>
-        <div class="card" style="width: 18rem; padding: 2rem; margin: 2rem">
-            <img src="/assets/playground.png" class="card-img-top" alt="playground" style="border-radius: 10px;">
+        <div class="card" *ngFor="let product of products" style="width: 18rem; padding: 2rem; margin: 1rem; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.25rem;">
+            <img [src]="product.imgSrc" class="card-img-top" [alt]="product.name" style="border-radius: 0.25rem;">
             <div class="card-body">
-              <h5 class="card-title">Playground</h5>
-              <p class="card-text">Your cat's new playground. </p>
-              <p class="card-price">Price: $1.00</p> <!-- Ár hozzáadása -->
-              <p class="card-stock">In Stock</p> <!-- Raktáron -->
-              <label for="quantity">Quantity:</label>
-              <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="selectedQuantity">
-              <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
-             
-            </div>
-          </div>
-        </td>
-
-      <td>
-        <div class="card" style="width: 18rem; padding: 2rem; margin: 2rem">
-          <img src="/assets/toy.png" class="card-img-top" alt="toy" style="border-radius: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Toy</h5>
-            <p class="card-text">Surprize for your cat.</p>
-            <p class="card-price">Price: $1.00</p> <!-- Ár hozzáadása -->
-            <p class="card-stock">In Stock</p> <!-- Raktáron -->
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="selectedQuantity">
-            <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">Your cat's new {{ product.name }}.</p>
+                <p class="card-price">Price: ${{ product.price.toFixed(2) }}</p>
+                <p class="card-stock">In Stock</p>
+                <label [for]="'quantity-' + product.id">Quantity:</label>
+                <input type="number" [id]="'quantity-' + product.id" name="quantity" min="1" max="10" [(ngModel)]="product.quantity" style="background-color: rgb(194, 210, 217); border: 1px solid #ced4da; border-radius: 0.25rem;">
+                <button (click)="addToCart(product)" class="btn btn-primary" style="margin-top: 0.5rem;">Add to Cart</button>
             </div>
         </div>
-      </td>
-
-      <td>
-        <div class="card" style="width: 18rem;padding: 2rem; margin: 2rem">
-          <img src="/assets/feedingDish.png" class="card-img-top" alt="feeding dish" style="border-radius: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Feeding dish</h5>
-            <p class="card-text">Your cat likes eating</p>
-            <p class="card-price">Price: $1.00</p> <!-- Ár hozzáadása -->
-            <p class="card-stock">In Stock</p> <!-- Raktáron -->
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="selectedQuantity">
-            <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
-          </div>
-        </div>
-      </td>
-
-      <td>
-        <div class="card" style="width: 18rem;padding: 2rem; margin: 2rem">
-          <img src="/assets/hammock.png" class="card-img-top" alt="hammock" style="border-radius: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Hammock</h5>
-            <p class="card-text">Your cat likes resting.</p>
-            <p class="card-price">Price: $1.00</p> <!-- Ár hozzáadása -->
-            <p class="card-stock">In Stock</p> <!-- Raktáron -->
-            <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="selectedQuantity">
-            <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
-          </div>
-        </div>
-      </td>
-       
-    </table>
-    
     </div>
     <router-outlet></router-outlet>
 </body>
 </html>
-
-
-
-<router-outlet></router-outlet>

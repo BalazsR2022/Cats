@@ -5,25 +5,33 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class CartService {
-  private itemCount = new BehaviorSubject<number>(0); // A kezdeti érték 0
-  currentCount = this.itemCount.asObservable();
+  private cartItems: any[] = [];
+  private cartCount = new BehaviorSubject<number>(0);
 
-  constructor() { }
+  // Observable, amit a NavbarComponent használhat a kosár számának megjelenítéséhez
+  currentCount = this.cartCount.asObservable();
 
-  addItem(quantity: number = 1) {
-    this.itemCount.next(this.itemCount.value + quantity);
+  constructor() {}
+
+ 
+
+  addItem(product: any): void {
+    // Alapértelmezett mennyiség
+    const item = { ...product, quantity: product.quantity || 1 };
+    this.cartItems.push(item);
+    this.updateCartCount();
   }
   
-  
 
-  removeItem() {
-    if (this.itemCount.value > 0) {
-      this.itemCount.next(this.itemCount.value - 1);
-    }
+  // Kosárban lévő elemek számának frissítése
+  private updateCartCount(): void {
+    const totalItems = this.cartItems.reduce((sum, item) => sum + item.quantity, 0);
+    this.cartCount.next(totalItems);  // A kosár számának frissítése
   }
 
-  getCount() {
-    return this.itemCount.value;
+
+  // Opció: Metódus a kosárban lévő elemek lekérésére
+  getCartItems(): any[] {
+    return this.cartItems;
   }
 }
-

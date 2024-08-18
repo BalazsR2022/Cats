@@ -80,3 +80,10 @@ button:active {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* kisebb árnyék */
     transform: translateY(2px); /* eltolás lefelé */
   }
+  app-navbar {
+    width: 100%; /* A navbar teljes szélessége */
+    position: fixed; /* Fix pozíció a tetején */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Magasabb rétegsorrend */
+}

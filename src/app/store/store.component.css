@@ -1,20 +1,44 @@
-.storeCards{
-
-    margin: 5px;
-    padding: 5px;
-    content: icon;
-}
+/* Alapvető stílusok a body-hoz, hogy ne legyen túlfolyás */
 body {
-    margin: 0;
-    padding-top: 60px; /* Állítsd be ezt az értéket a navbar magasságához képest */
-    height: 100vh; /* Magasság beállítása a nézetablak teljes magasságára */
-    display: flex;
-    flex-direction: column; /* A tartalom függőleges elrendezése */
-    justify-content: flex-start; /* Felső igazítás */
-    align-items: center; /* Középre igazítás vízszintesen */
-    background-size: contain; /* Háttérkép kitöltése */
-    background-color: #39968b;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Megakadályozza a vízszintes görgetést */
 }
-button{
-    margin-top: 15px;
+
+/* Alapvető stílusok a storeCards konténerhez */
+.storeCards {
+  display: flex;
+  flex-wrap: wrap; /* Engedi a kártyák sorba állását, ha nincs elég hely */
+  justify-content: space-around; /* Kártyák egyenletes elosztása a sorokban */
+  padding: 1rem;
+  box-sizing: border-box; /* Biztosítja, hogy a padding és a border is a konténer része legyen */
+  background: radial-gradient(circle, hsla(199, 100%, 84%, 1) 0%, hsla(220, 31%, 30%, 1) 100%);
+}
+
+/* Kártya stílusok */
+.card {
+  width: 18rem; /* Szélesség beállítása */
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box; /* Biztosítja, hogy a padding és a border is a kártya része legyen */
+  background-color: white; /* Kártyák háttérszíne */
+  display: flex;
+  flex-direction: column; /* A kártya tartalom elrendezése függőlegesen */
+}
+
+/* Kép stílusok */
+.card-img-top {
+  
+  width: 100%; /* Kép szélessége a kártya szélességéhez igazítva */
+  height: auto; /* Kép magassága automatikusan beállítva */
+}
+
+/* Kártya tartalom stílusok */
+.card-body {
+  padding: 1rem;
+  background-color: rgb(92, 130, 154);
+}
+.btn{
+  background-image: radial-gradient(circle, hsla(173, 43%, 84%, 1) 0%, rgb(100, 225, 217) 100%);
 }

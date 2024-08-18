@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service'; // Szolgáltatás importálása
+import { AuthService } from '../auth.service'; // AuthService importálása
 
 @Component({
   selector: 'app-navbar',
@@ -9,19 +10,12 @@ import { CartService } from '../cart.service'; // Szolgáltatás importálása
 export class NavbarComponent implements OnInit {
   cartItemCount: number = 0;
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, public authService: AuthService) {} // AuthService helyes injektálása
 
   ngOnInit(): void {
+    // Feliratkozás a kosárban lévő elemek számának változásaira
     this.cartService.currentCount.subscribe(count => {
       this.cartItemCount = count;
-      this.updateCartCount();
     });
-  }
-
-  updateCartCount() {
-    const cartCountElement = document.getElementById('cart-count');
-    if (cartCountElement) {
-      cartCountElement.textContent = this.cartItemCount.toString();
-    }
   }
 }

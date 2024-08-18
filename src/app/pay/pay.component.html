@@ -7,23 +7,20 @@
     <link rel="stylesheet" href="pay.component.css">
 </head>
 <body>
+    <app-navbar></app-navbar>
     <div class="catUser">
         
         <form class="sign-in-form">
             
             <input type="text" placeholder="Name" id="signInUserName">
-            <input type="password" placeholder="Password" id="signInUserPassword">
+            <input type="adress" placeholder="Adress" id="UserAdress">
             <input type="email" placeholder="Email" id="signInUserEmail">
-            <button type="submit">Sign In</button>
+            <input type="piece" placeholder="Piece" id="pieceProduct">
+            <input type="id" placeholder="Product" id="idProduct">
+            <label type="order" placeholder="Order" id="Order"> </label>
+            <button type="submit">Go</button>
         </form>
 
-        <form class="log-in-form">
-            
-            <input type="text" placeholder="Name" id="logInUserName">
-            <input type="password" placeholder="Password" id="logInUserPassword">
-            <button type="submit">Log In</button>
-            <button type="button" routerLink="/home">Home</button>
-        </form>
     </div>
     <router-outlet></router-outlet>
 </body>
